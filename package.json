@@ -1,0 +1,16 @@
+{
+"name" : "sass-lwp",
+"version" : "0.1.0",
+"author" : "Adam Marsh - laowaiphotography.com",
+"private" : true,
+
+"devDependencies" : {
+    "grunt" :                       "~0.4.0",
+    "grunt-contrib-cssmin":         "*",
+    "grunt-contrib-sass":           "*",
+    "grunt-contrib-uglify":         "*",
+    "grunt-contrib-watch":          "*",
+    "grunt-cssc":                   "*",
+    "matchdep":                     "*"
+    }
+}

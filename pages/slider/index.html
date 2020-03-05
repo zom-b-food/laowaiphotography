@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- 
+/*
+* Crossfade
+* Version 4.1 30/03/2007
+* 
+* Copyright (c) 2007 Millstream Web Software http://www.millstream.com.au
+* 
+* Permission is hereby granted, free of charge, to any person
+* obtaining a copy of this software and associated documentation
+* files (the "Software"), to deal in the Software without
+* restriction, including without limitation the rights to use, copy,
+* modify, merge, publish, distribute, sublicense, and/or sell copies
+* of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be
+* included in all copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+* BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+* ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+* * 
+*/
+ -->
+	<head>
+		<title>Image Fader</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	</head>
+	<body>
+
+			<div class="example">
+				<h2>Next + Previous, FadeOutFadeIn Transition</h2>
+				<ul id="fade-example-1" class="crossfade transition-fadeoutfadein">
+					<li><img src="images/image1.jpg" /><div class="caption">Image 1 is pretty</div></li>
+					<li><img src="images/image2.jpg" /><div class="caption">Image 2 is cute</div></li>
+					<li><img src="images/image3.jpg" /><div class="caption">Image 3 is not bad</div></li>
+					<li><img src="images/image4.jpg" /><div class="caption">Image 4 is slightly nice</div></li>
+					<li><img src="images/image5.jpg" /><div class="caption">Image 5 is pretty good</div></li>
+					<li><img src="images/image6.jpg" /><div class="caption">Image 6 is the best</div></li>
+				</ul>
+				<div id="controls">
+					<span id="fade-example-1-previous" class="control">&lt;</span> <span id="fade-example-1-next" class="control">&gt;</span> 
+				</div>
+			</div>
+		
+		<script type="text/javascript" src="javascript/scriptaculous/lib/prototype.js"></script>
+		<script type="text/javascript" src="javascript/scriptaculous/src/effects.js"></script>
+		<script type="text/javascript" src="javascript/fastinit.js"></script>
+		<script type="text/javascript" src="javascript/crossfade.js"></script>
+		<script>
+			Crossfade.setup({autoLoad:false});
+			var cf1 = new Crossfade('fade-example-1', {autoStart:false});
+		</script>
+	</body>
+</html>

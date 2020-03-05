@@ -1,0 +1,278 @@
+form .text {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 14px;
+	width: 200px;
+	background-color: #ffffff;
+}
+form label {
+	float: right;
+	font-size: 1.15em;
+    padding-left: 4px;
+	padding-right:4px;
+}
+
+form .error {
+	color: #c00;
+	font-size:1.2em;
+}
+
+p.error, td.error {
+	color: #c00;
+	font-size:1.2em;
+	font-weight: bold;
+	font-variant:small-caps;
+	padding:4px 0 0 8px;
+	border-bottom:1px dotted #ccc;
+	float:left;
+	clear:both;
+}
+
+form label.txtArea {
+	margin-bottom: 4px;
+}
+
+form label.error {
+	color: #c00;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-variant:small-caps;
+	display: none;
+	margin-right: 170px;
+	padding:4px 0 0 2px;
+	border-bottom:1px dotted #ccc;
+	float:right;
+	clear:both;
+}
+
+form label label.error {
+	margin-left:0;
+}
+
+form label.centered {
+	padding:0 0;
+	width:200px !important;
+}
+
+form fieldset fieldset label.spaced {
+	margin-bottom:3px;
+}
+
+fieldset {
+	margin-top: 25px;
+	padding: 15px;
+	border: 1px solid #b3c0a9;
+	width:90%;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+fieldset legend {
+	font-family: "Trebuchet MS", Candara, Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight:normal;
+	text-shadow: 0 1px 1px #cccccc;
+	letter-spacing: 1px;
+	color: #273953;
+}
+
+label {
+	cursor: pointer;
+}
+
+.block {
+	display: block;
+}
+
+/*** FORM LISTS ***/
+form ul {
+	padding:5px 10px;
+	list-style: none;
+}
+
+form li {
+	width: 100%;
+	padding:5px 0 10px 0;
+	border-top:1px dotted #ccc;
+	display:block;
+	float: left;
+	clear: left;
+}
+
+form li:first-child {
+	border:none;
+}
+
+
+/* form elements */
+input {	border: 1px solid #576c50; }
+input, textarea { border: 1px solid #576c50; }
+input, textarea:focus { border: 1px dotted black; }
+input:focus { border: 1px dotted black; }
+input.error { border: 1px dotted red; }
+input, button { }
+
+input, .comments {
+	width: 92%;
+}
+
+input, .email {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+input, .textArea {
+	border: 1px solid #576c50;
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	width: 250px;
+	height: 46px;
+	background-color: #ffffff;
+	padding: 3px;
+}
+
+input, .PHONEformField {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 13px;
+	width: 110px;
+	background-color: #ffffff;
+}
+
+input, .MEDformField {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 13px;
+	width: 140px;
+	background-color: #ffffff;
+}
+
+input, .LONGformField {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 13px;
+	width: 200px;
+	background-color: #ffffff;
+}
+
+input, .SHORTformField {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 13px;
+	width: 70px;
+	background-color: #ffffff;
+}
+
+input, .TINYformField {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 13px;
+	width: 31px;
+	background-color: #ffffff;
+}
+
+/* select form elements for firefox */
+input, .selField0 {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 20px;
+	width: 58px;
+	background-color: #f5f8e7;
+}
+
+input, .selField1 {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 20px;
+	width: 160px;
+	background-color: #f5f8e7;
+}
+
+input, .selField2 {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 20px;
+	width: 140px;
+	background-color: #ffffff;
+}
+
+input, .radio {
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	height: 12px;
+	width: 12px;
+	background-color: transparent;
+}
+
+.sbtn {
+	background-color: #7e8e6a;
+	color: #e3e2b6;
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	width: 52px;
+	height: 22px;
+	margin: 2px;
+}
+
+.sbtn:hover {
+	border: 1px solid  #96ac7f;
+	background-color: #d8d7b9;
+	color: #3f4f22;
+}
+
+.mbtn {
+	background-color: #7e8e6a;
+	color: #e3e2b6;
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: .95em;
+	font-weight: bold;
+	text-align: center;
+	width: 96px;
+	height: 22px;
+	margin: 2px;
+}
+
+.mbtn:hover {
+	border: 1px solid  #96ac7f;
+	background-color: #d8d7b9;
+	color: #3f4f22;
+}
+
+.lbtn {
+	background-color: #7e8e6a;
+	color: #e3e2b6;
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: 95em;
+	font-weight: bold;
+	text-align: center;
+	width: 138px;
+	height: 22px;
+	margin: 2px;
+}
+
+.lbtn:hover {
+	border: 1px solid  #96ac7f;
+	background-color: #d8d7b9;
+	color: #3f4f22;
+}
+
+.xlbtn {
+	background-color: #7e8e6a;
+	color: #e3e2b6;
+	font-family: Candara, Verdana, Arial, sans-serif;
+	font-size: .95em;
+	font-weight: bold;
+	text-align: center;
+	width: 200px;
+	height: 22px;
+	margin: 2px;
+}
+
+.xlbtn:hover {
+	border: 1px solid  #96ac7f;
+	background-color: #d8d7b9;
+	color: #3f4f22;
+}
