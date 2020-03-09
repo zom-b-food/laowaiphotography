@@ -1,92 +1,36 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-    <script type="text/javascript" src="./resources/js/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="./resources/js/jquery.html5Loader.min.js"></script>
-    <script type="text/javascript">
-        /*
-         $(function () {
-         $.preloadimg = function() {
-         for (var i = 0; i < arguments.length; i++) {
-         $("<img />").attr("src", arguments[i]);
-         }
-         }
-         });
-
-
-         $.preloadimg("images/background.jpg");
-         */
-        var t = (new Date).getTime();
-        var files = [
-
-
-            {
-                "type":"CSS",
-                "source":"./resources/compiled/sass-lwp.min.css",
-                "size":5.5
-            },
-
-            {
-                "type":"SCRIPT",
-                "source":"./resources/compiled/sass-lwp.min.js",
-                "size":5.8,
-                "stopExecution":false
-            }
-        ];
-
-        $.html5Loader({
-            filesToLoad: {"files": files},
-            stopExecution: true,
-            onElementLoaded: function ( obj, elm ) {
-                var source = obj.source.split('/');
-                console.log( source[source.length-1].split('.js')[0] );
-            },
-            onComplete: function () {
-                console.log("%c\n All assets loaded! ", "background: #222; color: #bada55");
-            }
-        });
-
-
-        function autotab(original, destination) {
-            if (original.getAttribute && original.value.length == original.getAttribute("maxlength"))destination.focus()
-        }
-
-        $(window).load(function(){
-            $('#dvLoading').fadeOut(1400);
-        });
+    <?php include 'sitewide/globals.php'; ?>
+    <script>
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
     </script>
     <style type="text/css">
-        #dvLoading
-        {
-            background:#fff url('/resources/images/ui/bx_loader.gif') no-repeat center center;
-            height: 200px;
-            width: 200px;
-            position: fixed;
-            z-index: 1000;
-            left: 50%;
-            top: 50%;
-            margin: -25px 0 0 -25px;
-        }
+    .se-pre-con {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(/resources/images/ui/loading.svg) center no-repeat #000000;
+    }
     </style>
 </head>
 
 <body>
-<div id="dvLoading"></div>
-
+    <div id="preloader" class="se-pre-con"></div>
 </body>
 <script type="text/javascript">
-    $(window).load(function () {
-        window.setTimeout(function () {
-            window.location.href = "./pages/home.php";
-        }, 1400)
-    });
-
-
-
-</SCRIPT>
+$(window).load(function() {
+    window.setTimeout(function() {
+        window.location.href = "./pages/home.php";
+    }, 500)
+});
+</script>
 
 </html>

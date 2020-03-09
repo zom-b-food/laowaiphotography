@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>LaoWai Photography - Adam Marsh</title>
     <?php include '../sitewide/globals.php'; ?>
@@ -28,9 +27,25 @@
      }, false);
      }, false);*/
     </script>
+    <style type="text/css">
+    html,
+    body {
+        background-color: black;
+    }
+    body {
+        opacity: 1;
+        transition: 2s opacity;
+    }
+    body.fade {
+        opacity: 0;
+        transition: none;
+    }
+    </style>
 </head>
-
 <body>
+    <script>
+    document.body.className = 'fade';
+    </script>
     <!-- Page Content -->
     <div class="container wrapper">
         <div class="col-md-3 pl0">
@@ -99,6 +114,11 @@ fclose($data);
             <?php include '../sitewide/footer.php'; ?>
         </footer>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+    });
+    </script>
     <!-- Script to Activate the Carousel -->
     <script>
     $.support.transition = (function() {
@@ -114,5 +134,4 @@ fclose($data);
     })
     </script>
 </body>
-
 </html>
