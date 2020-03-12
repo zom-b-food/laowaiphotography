@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>LaoWai Photography - Adam Marsh</title>
     <?php include '../sitewide/globals.php'; ?>
@@ -13,16 +14,19 @@
     body {
         background-color: black;
     }
+
     body {
         opacity: 1;
         transition: 2s opacity;
     }
+
     body.fade {
         opacity: 0;
         transition: none;
     }
     </style>
 </head>
+
 <body>
     <script>
     document.body.className = 'fade';
@@ -70,14 +74,14 @@
                         class="img-responsive hideSM" /></div>
             </div>
             <div class="col-md-6">
-                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0 " width="582" height="418"
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0 " width="582" height="500"
                     style="margin-top:20px;"
                     src="https://maps.google.com/maps?hl=en&q=12121 admiralty way, everett, wa 98204&ie=UTF8&t=m&z=15&iwloc=B&output=embed">
                 </iframe>
                 <hr />
-                <iframe id="contact" class="contact-info" width="100%" height="580"
-                    src="../contact/contactForm/index.php" overflow="hidden" scrolling="no" frameborder="0"
-                    allowfullscreen></iframe>
+
+                <iframe id="contact" class="contact-info" width="100%" height="600" src="../contactForm/index.php"
+                    overflow="hidden" scrolling="no" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="col-md-3">
                 <?php include '../sitewide/fullSidebar.php'; ?>
@@ -94,4 +98,5 @@
     });
     </script>
 </body>
+
 </html>

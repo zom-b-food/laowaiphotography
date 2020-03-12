@@ -2,11 +2,11 @@
 
 return [
     'subject' => [
-        'prefix' => '[Contact Form] - laowaiphotography.com'
+        'prefix' => '[laowaiphotography.com Contact Form]'
     ],
     'emails' => [
         'to'   => 'am@laowaiphotography.com',
-        'from' => '[Web Page Contact Form] laowaiphotography.com'
+        'from' => '[Contact Form] from laowaiphotography.com'
     ],
     'messages' => [
         'error'   => 'There was an error sending your message, please try again later.',
